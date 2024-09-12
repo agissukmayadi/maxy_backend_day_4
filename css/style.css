@@ -1,3 +1,7 @@
 #product-container {
   min-height: calc(100vh - 215px - 168px);
 }
+
+.description {
+  display: none;
+}

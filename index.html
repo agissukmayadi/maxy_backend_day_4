@@ -6,7 +6,7 @@
     <title>Elvicto - Product List</title>
     <link
       rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css"
+      href="https://cdn.jsdelivr.net/npm/bulma@1.0.2/css/bulma.min.css"
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
@@ -26,7 +26,7 @@
     <section class="hero is-info">
       <div class="hero-body">
         <div class="container">
-          <h1 class="title">Welcome to Elvicto!</h1>
+          <h1 class="title">Welc style="cursor: pointer;"ome to Elvicto!</h1>
           <h2 class="subtitle">Check out our latest products below.</h2>
         </div>
       </div>
@@ -41,12 +41,25 @@
             <div class="card">
               <div class="card-image">
                 <figure class="image is-4by3">
-                  <img src="img/products/facewash.jpeg" alt="Product 1" />
+                  <img
+                    style="cursor: pointer"
+                    src="img/products/facewash.jpeg"
+                    alt="Product 1"
+                  />
                 </figure>
               </div>
               <div class="card-content">
-                <p class="title is-4">Elvicto Anti Acne Facewash</p>
+                <p class="title is-4" style="cursor: pointer">
+                  Elvicto Anti Acne Facewash
+                </p>
                 <p class="subtitle is-6">Rp 89.000</p>
+                <p class="description">
+                  Elvicto Anti Acne face wash merupakan sabun pembersih wajah
+                  yang diformulasikan khusus untuk mengatasi masalah jerawat
+                  tanpa membuat kulit menjadi kering. Efektif mengatasi masalah
+                  jerawat, komedo, beruntusan, menenangkan kulit kemerahan, dan
+                  mengontrol minyak berlebih.
+                </p>
                 <button class="button is-primary is-fullwidth">
                   Add to Cart
                 </button>
@@ -60,12 +73,25 @@
             <div class="card">
               <div class="card-image">
                 <figure class="image is-4by3">
-                  <img src="img/products/facewash-1.jpeg" alt="Product 2" />
+                  <img
+                    style="cursor: pointer"
+                    src="img/products/facewash-1.jpeg"
+                    alt="Product 2"
+                  />
                 </figure>
               </div>
               <div class="card-content">
-                <p class="title is-4">Elvicto Hydrating Facewash</p>
+                <p class="title is-4" style="cursor: pointer">
+                  Elvicto Hydrating Facewash
+                </p>
                 <p class="subtitle is-6">Rp 89.000</p>
+                <p class="description">
+                  Elvicto Hydrating Gentle Face Wash merupakan sabun pembersih
+                  wajah yang diformulasikan secara khusus untuk kulit sensitif,
+                  tidak mengandung bahan bahan yang dapat mengiritasi kulit
+                  dapat membersihkan kulit wajah secara mendalam tanpa
+                  menghilangkan kelembapan alami kulit.
+                </p>
                 <button class="button is-primary is-fullwidth">
                   Add to Cart
                 </button>
@@ -79,12 +105,25 @@
             <div class="card">
               <div class="card-image">
                 <figure class="image is-4by3">
-                  <img src="img/products/serum.jpeg" alt="Product 3" />
+                  <img
+                    style="cursor: pointer"
+                    src="img/products/serum.jpeg"
+                    alt="Product 3"
+                  />
                 </figure>
               </div>
               <div class="card-content">
-                <p class="title is-4">Elvicto Brightening Serum</p>
+                <p class="title is-4" style="cursor: pointer">
+                  Elvicto Brightening Serum
+                </p>
                 <p class="subtitle is-6">Rp 99.000</p>
+                <p class="description">
+                  Elvicto Brightening Serum merupakan serum yang diformulasikan
+                  khusus Pria. Dengan kandungan pencerah terbaik seperti Alpha
+                  Arbutin, Glutathione, Niacinamide, dan Vitamin C yang kaya
+                  akan Antioksidan yang tinggi dapat membuat kulit wajah tampak
+                  lebih cerah alami & segar setiap waktu.
+                </p>
                 <button class="button is-primary is-fullwidth">
                   Add to Cart
                 </button>
@@ -97,12 +136,25 @@
             <div class="card">
               <div class="card-image">
                 <figure class="image is-4by3">
-                  <img src="img/products/toner.jpeg" alt="Product 4" />
+                  <img
+                    style="cursor: pointer"
+                    src="img/products/toner.jpeg"
+                    alt="Product 4"
+                  />
                 </figure>
               </div>
               <div class="card-content">
-                <p class="title is-4">Elvicto Brightening Toner</p>
+                <p class="title is-4" style="cursor: pointer">
+                  Elvicto Anti Acne Toner
+                </p>
                 <p class="subtitle is-6">Rp 109.000</p>
+                <p class="description">
+                  Elvicto men acne toner adalah toner yang diformulasikan untuk
+                  kulit pria yang dapat membantu menyeimbangkan ph kulit,
+                  membantu mengatasi jerawat, membantu menenangkan kulit
+                  kemerahan akibat jerawat,dan membantu menyamarkan noda bekas
+                  jerawat
+                </p>
                 <button class="button is-primary is-fullwidth">
                   Add to Cart
                 </button>
@@ -117,5 +169,66 @@
         <p><strong>Elvicto</strong> by <a href="#">Agis Sukmayadi</a>.</p>
       </div>
     </footer>
+    <div class="modal" id="product-modal">
+      <div class="modal-background"></div>
+      <div class="modal-content">
+        <div class="box">
+          <div class="modal-product-details">
+            <figure class="image is-4by3">
+              <img id="modal-image" src="" alt="Product image" />
+            </figure>
+            <h3
+              class="title is-4"
+              style="cursor: pointer"
+              id="modal-title"
+            ></h3>
+            <p class="subtitle is-6" id="modal-price"></p>
+            <p id="modal-description">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            </p>
+            <button class="button is-primary is-fullwidth">Add to Cart</button>
+          </div>
+        </div>
+      </div>
+      <button class="modal-close is-large" aria-label="close"></button>
+    </div>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const productCards = document.querySelectorAll(".card");
+
+        const modal = document.querySelector("#product-modal");
+        const modalClose = modal.querySelector(".modal-close");
+        const modalBackground = modal.querySelector(".modal-background");
+
+        function openModal(product) {
+          document.querySelector("#modal-title").textContent = product.title;
+          document.querySelector("#modal-price").textContent = product.price;
+          document.querySelector("#modal-image").src = product.image;
+          document.querySelector("#modal-description").textContent =
+            product.description;
+
+          modal.classList.add("is-active");
+        }
+
+        productCards.forEach((card) => {
+          card.addEventListener("click", () => {
+            const product = {
+              title: card.querySelector(".title").textContent,
+              price: card.querySelector(".subtitle").textContent,
+              image: card.querySelector("img").src,
+              description: card.querySelector(".description").textContent,
+            };
+            openModal(product);
+          });
+        });
+
+        modalClose.addEventListener("click", () =>
+          modal.classList.remove("is-active")
+        );
+        modalBackground.addEventListener("click", () =>
+          modal.classList.remove("is-active")
+        );
+      });
+    </script>
   </body>
 </html>
